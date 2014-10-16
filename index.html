@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-    <meta charset="UTF-8">
+        <meta charset="UTF-8">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="main.js"> </script>
-    <script type="text/javascript" src="main2.js"> </script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="main.js"> </script>
+        <script type="text/javascript" src="main2.js"> </script>
 
-
-
-
-    <title>Weather</title>
-
-
-
+        <title>Weather</title>
     </head>
 <body>
 
-
-
     <div id="menubar1">
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Content</a>
-        <a href="#">About us</a>
-        <a href="#">Contact</a>
+
+        <a href="#"><i style="font-size: 20pt" class="fa fa-home" ></i>  Home</a>
+        <a href="index.html"><i style="font-size: 15pt" class="fa fa-bar-chart" ></i>  Weather</a>
+        <a href="about.html">About</a>
 
     </div>
 
-    <div id="contentdiv">
-        <input type="date" id="date_from">
-        <input type="date" id="date_to">
-        <select>
-            <option value="hour">hodinovy</option>
-            <option value="day">denny</option>
-        </select>
-        <button id="button">Request</button>
+    <div id="bodydiv">
+
+        <div id="left">
+            Date from:
+            <br><input type="date" id="date_from"> </br>
+
+            Date to:
+            <br><input type="date" id="date_to"> </br>
+
+            Interval:
+            <br><select>
+                <option value="hour">hodinovy</option>
+                <option value="day">denny</option>
+            </select>
+            <br><button id="button">Request</button>
+
+        </div>
+
+        <div id="right">
+
+        </div>
 
 
     </div>
-
-
-
-
 
 </body>
 </html>

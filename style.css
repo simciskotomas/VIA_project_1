@@ -1,74 +1,133 @@
 body {
-    background: #000;
-    margin-top: 5px;
+    background: #541F14;
+    margin-top: 15px;
 
 }
 
 div#menubar1 {
-    padding: 12px;
-    border:  #999 1px dashed;
-    margin-left: 20%;
-    margin-right: 20%;
-    border-radius: 20px;
-
-    background-color: #FFFFFF;
-
+    padding: 15px;
+    border: 2px double #FFFFFF;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 10px;
+    background-color: #222;
+    text-align: center;
 
 }
 
 div#menubar1 > a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    background-color: #FFFFFF;
-    color: #2881FF;
-
-    margin-right: 8px;
-
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 15pt;
+    background-color: #222;
+    color: #FFFFFF;
+    margin-right: 0px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-decoration: none;
-    border-radius: 7px;
+
     transition: background 0.3s linear 0s, color 0.3s linear 0s;
+    text-align: center;
+
 }
 
 div#menubar1 > a:hover{
 
-    background-color: #2881FF;
-    color: #FFFFFF;
+    background-color: #333;
+    color: #CC9E61;
+
 
 }
 
-div#menubar1 > a:active{
+div#menubar1 > a:active {
 
     background-color: #6F8A00;
     color: #FFF;
-
 }
 
 
-div#contentdiv {
+div#bodydiv {
+    background-color: #626266;
+    margin: 30px 150px;
+    border-color: #6F8A00;
+    border: 20px;
+    height: 700px;
+    padding: 30px 30px;
+}
+div#left {
 
     border: 1px;
     border-color: #FFFFFF;
-    margin: 50px;
-}
-
-div#contentdiv > input[type=date] {
-
-    margin: 20px;
-    -webkit-border-radius: 50px;
-    border: 5px;
-    border-color: #FFFFFF;
-
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #CC9E61;
+    width: 20%;
+    height: 95%;
+    float: left;
+    border-radius: 10px 0px 0px 10px;
 
 }
-div#contentdiv > select {
 
-    margin: 20px;
-    -webkit-border-radius: 50px;
+div#left > input[type=date] {
+
+    margin-bottom: 30px;
+    margin-top: 5px;
+   -webkit-border-radius: 5px;
+    border: solid #FFFFFF;
+    height: 25px;
+    width: 140px;
+}
+
+div#left > input[type=date]:hover {
+    border-color: #6A6A6A;
+}
+
+div#left > select {
+
+    margin-top: 5px;
+    margin-bottom: 20px;
+    -webkit-border-radius: 5px;
     border: 5px;
+    border:  solid #FFFFFF;
+    height: 25px;
+    width: 140px;
+}
+#left > select:hover {
+    border-color: #6A6A6A;
+
+}
+div#left > button {
+    width: 75%;
+    height: 40px;
+    font-size: 17pt;
+    font-weight: bold;
+    background-color: #626266;
+    color: #FFFFFF;
+    margin: 20px 25px;
+    border-radius: 12px;
+    transition: background 0.1s linear 0s, color 0.1s linear 0s;
+
+}
+
+div#left > button:hover {
+
+    background-color: #626266;
+    color: #CC9E61;
+    border: 5px double #CC9E61;
+}
+
+div#right {
+
+    border: 1px;
     border-color: #FFFFFF;
+    padding: 15px;
+    background-color: #CC9E61;
+    width: 72%;
+    height: 95%;
+    float: right;
+    border-radius: 0px 10px 10px 0px;
 }
 

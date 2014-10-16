@@ -1,10 +1,16 @@
 $(document).ready(function(){
     $("button").click(function(){
+        var element1 = document.getElementById("date_from");
+        var result = element1.value;
+
         $.get("http://homel.vsb.cz/~zao034/via/weather.php", {
             format: "json",
             type: "hour",
             from: "30.07.2014",
             to: "31.07.2014"
+        }).done(function(data){
+            alert( "Data Loaded: " + data );
+
         });
     });
 });
