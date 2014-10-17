@@ -44,7 +44,7 @@ div#menubar1 > a:hover{
 
 div#menubar1 > a:active {
 
-    background-color: #6F8A00;
+    background-color: #333;
     color: #FFF;
 }
 
@@ -68,6 +68,8 @@ div#left {
     height: 95%;
     float: left;
     border-radius: 10px 0px 0px 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 10pt;
 
 }
 
@@ -102,7 +104,7 @@ div#left > select {
 div#left > button {
     width: 75%;
     height: 40px;
-    font-size: 17pt;
+    font-size: 12pt;
     font-weight: bold;
     background-color: #626266;
     color: #FFFFFF;
@@ -129,5 +131,25 @@ div#right {
     height: 95%;
     float: right;
     border-radius: 0px 10px 10px 0px;
+}
+
+#aboutdiv {
+
+    width: 25%;
+    height: 25%;
+    background-color: #FFFFFF;
+    padding: 10px;
+
+}
+
+#aboutdiv > strong {
+    font-size: 13pt;
+
+
+}
+
+#aboutdiv > strong:hover {
+
+    background-color: #6F8A00;
 }
 
