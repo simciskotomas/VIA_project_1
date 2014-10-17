@@ -1,19 +1,30 @@
 $(document).ready(function(){
     $("button").click(function(){
-        var element1 = document.getElementById("date_from");
-        var result = element1.value;
+
+        var from = $("#date_from").val().split("-");
+        var to = $("#date_to").val().split("-");
+        var interval = $("#interval").val();
 
         $.get("http://homel.vsb.cz/~zao034/via/weather.php", {
             format: "json",
-            type: "hour",
-            from: "30.07.2014",
-            to: "31.07.2014"
+            type: interval,
+            from: from[2]+'.'+from[1]+'.'+from[0],
+            to: to[2]+'.'+to[1]+'.'+to[0]
         }).done(function(data){
             alert( "Data Loaded: " + data );
+            console.log(data);
 
+
+            $.each( data, function( index, hodnota ) {
+                //var json = JSON.parse(data);
+                console.log("sdfsdf");
+            });
         });
     });
 });
+
+
+
 
 $(document).ready(function() {
     var date = new Date();
